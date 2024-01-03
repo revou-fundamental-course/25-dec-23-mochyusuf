@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="asset/luas.png">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Segitiga</title>
+</head>
+
+<body>
+    <header>
+      <nav class="navbar">
+        <li class="nav-item">
+            <h1>Kalkulator Segitiga</h1>
+        </li>
+      </nav>
+    </header>
+    <div class="container">
+        <h2>Luas Segitiga :</h2>
+        <div class="segitiga">
+            <img src="asset/luas.png">
+            <div class="keterangan">
+                <h3>Rumus = 1/2 x alas x tinggi</h3>
+                <h3>Keterangan</h3>
+                <p>b = alas</p>
+                <p>t = tinggi</p>
+            </div>
+            <button onclick="refresh()" id="btnRefresh">Refresh</button>
+        </div>
+
+        <main>
+            <h2>Hitung luas Segitiga :</h2>
+            <article class="hitungan">
+                <input type="number" name="panjang" id="panjang" placeholder="Panjang (cm)">
+                <input type="number" name="tinggi" id="tinggi" placeholder="Tinggi (cm)">
+                <p id="luas"></p>
+                <button onclick="hitungLuas()">Hitung</button>
+            </article>
+        </main>
+    </div>
+    <div class="container">
+        <h2>Keliling Segitiga :</h2>
+        <div class="segitiga">
+            <img src="asset/keliling.png">
+            <div class="keterangan">
+                <h3>Rumus K = a + b + c</h3>
+                <h3>Keterangan :</h3>
+                <p>a, b, c = Sisi Segitiga</p>
+                <p>K adalah Keliling</p>
+            </div>
+            <button onclick="refresh()" id="btnRefresh">Refresh</button>
+        </div>
+
+        <main>
+            <h2>Hitung Keliling Segitiga :</h2>
+            <article class="hitungan">
+                <input type="number" id="sisi1" placeholder="Sisi 1 (cm)">
+                <input type="number" id="sisi2" placeholder="Sisi 2 (cm)">
+                <input type="number" id="sisi3" placeholder="Sisi 3 (cm)">
+                <p id="keliling"></p>
+                <button onclick="hitungKeliling()">Hitung</button>
+            </article>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
